@@ -30,19 +30,28 @@ public class ScalaMinimalCakeGenerator extends AnAction {
     }
     final Document document = editor.getDocument();
     VirtualFile virtualFile = FileDocumentManager.getInstance().getFile(document);
+
+    // only run in scala file
     if (virtualFile == null || !virtualFile.getPath().endsWith(".scala")) {
       return;
     }
 
+    // result contents
     String contents = createText(document, e);
-
+    // update text with added boilerplate
     updateText(contents, project, document);
   }
 
+  /**
+   * result string after execution this plugin
+   */
   private String createText(Document document, AnActionEvent e) {
-    return document.getText() + generatePatternStrings(getPsiClassFromContext(e));
+    return document.getText() + generatePatternStrings(getPsiClass(e));
   }
 
+  /**
+   * update text with created text includes boilerplate
+   */
   private void updateText(String contents, Project project, Document document) {
     final Runnable readRunner = () -> document.setText(contents);
     ApplicationManager.getApplication().invokeLater(() ->
@@ -55,8 +64,10 @@ public class ScalaMinimalCakeGenerator extends AnAction {
     );
   }
 
-
-  private PsiClass getPsiClassFromContext(AnActionEvent e) {
+  /**
+   * extract PsiClass instance from AnActionEvent
+   */
+  private PsiClass getPsiClass(AnActionEvent e) {
     PsiFile psiFile = e.getData(LangDataKeys.PSI_FILE);
     Editor editor = e.getData(PlatformDataKeys.EDITOR);
 
@@ -70,6 +81,9 @@ public class ScalaMinimalCakeGenerator extends AnAction {
     return PsiTreeUtil.getParentOfType(element, PsiClass.class);
   }
 
+  /**
+   * generate boilerplate string
+   */
   private String generatePatternStrings(PsiClass psiClass) {
     String className = psiClass.getName();
     String fieldName = className.substring(0, 1).toLowerCase() + className.substring(1);
