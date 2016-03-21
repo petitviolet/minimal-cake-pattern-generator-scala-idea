@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MinimalCakeGenerator.iml" filepath="$PROJECT_DIR$/MinimalCakeGenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Scala-MinimalCakeGenerator.iml" filepath="$PROJECT_DIR$/Scala-MinimalCakeGenerator.iml" />
     </modules>
   </component>
 </project>

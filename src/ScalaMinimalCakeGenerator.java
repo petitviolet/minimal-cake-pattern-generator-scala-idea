@@ -16,7 +16,7 @@ import com.intellij.psi.PsiFile;
 import com.intellij.psi.util.PsiTreeUtil;
 
 
-public class MinimalCakeGenerator extends AnAction {
+public class ScalaMinimalCakeGenerator extends AnAction {
 
   @Override
   public void actionPerformed(AnActionEvent e) {
