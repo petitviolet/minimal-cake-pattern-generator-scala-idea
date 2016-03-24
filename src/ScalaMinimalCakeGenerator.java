@@ -82,7 +82,7 @@ public class ScalaMinimalCakeGenerator extends AnAction {
     String fieldName = className.substring(0, 1).toLowerCase() + className.substring(1);
 
     return String.format(
-        "trait Uses%s {\n\tval %s: %s\n}\n\n" +
+        "\ntrait Uses%s {\n\tval %s: %s\n}\n\n" +
             "trait MixIn%s {\n\tval %s: %s = new %sImpl\n}\n\n" +
             "class %sImpl extends %s",
         className, fieldName, className,
