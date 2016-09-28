@@ -1,5 +1,7 @@
 # Minimal-Cake-Pattern Generator Plugin for IntelliJ IDEA
 
+[JetBrains Plugin Repository :: Minimal Cake Pattern Generator](https://plugins.jetbrains.com/plugin/8602?pr=idea)
+
 # What is this?
 
 ![Demo](https://dl.dropboxusercontent.com/u/26228820/gif/scala-minimal-cake-pattern-idea.gif)
