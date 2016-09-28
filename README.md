@@ -4,12 +4,17 @@
 
 # What is this?
 
-![Demo](https://dl.dropboxusercontent.com/u/26228820/gif/scala-minimal-cake-pattern-idea.gif)
+![Demo](./img/scala-minimal-cake-pattern-idea.gif)
 
 Reference of "Minimal-Cake-Pattern" is below(in Japanese).  
 [Scalaにおける最適なDependency Injectionの方法を考察する 〜なぜドワンゴアカウントシステムの生産性は高いのか〜 - Qiita](http://qiita.com/pab_tech/items/1c0bdbc8a61949891f1f)
 
 # Installation
+
+Just search and install on IntelliJ.
+![img](./img/search.png)
+
+### install manually
 
 - [Download](https://github.com/petitviolet/minimal-cake-pattern-generator-scala-idea/blob/master/Scala-MinimalCakeGenerator.jar?raw=true)
 - Launch IntelliJ IDEA
