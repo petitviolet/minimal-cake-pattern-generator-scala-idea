@@ -1,7 +1,7 @@
 <idea-plugin version="2">
     <id>net.petitviolet.idea.scala.minimal-cake-pattern-generator</id>
     <name>Minimal Cake Pattern Generator</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <vendor email="violethero0820@gmail.com" url="http://petitviolet.net">petitviolet</vendor>
 
     <description><![CDATA[
